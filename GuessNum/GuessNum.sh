@@ -4,6 +4,7 @@
 
 if ! dpkg -s figlet > /dev/null; then
 	echo "figlet package is not installed, please run sudo apt install figlet"
+	break
 fi
 
 # Title

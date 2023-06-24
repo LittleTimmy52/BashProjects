@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+	echo "No time specified, will suspend in 5 seconds"
+	sleep 5s
+	systemctl suspend
+fi
+
+if [[ $1 =~ ^[0-9]+$ ]]; then
+	sleep $1
+	systemctl suspend
+elif [[ $1 -eq "-h" || $1 -eq "--help" ]]; then
+	echo "Usage: sus (time until suspend) or -h or --help to see this message"
+else
+	echo "Invalid time, please specify seconds"
+fi

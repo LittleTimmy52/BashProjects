@@ -22,3 +22,16 @@ Words will be jumbled and difficulty determines what words one sees
 
 ### Additonal info
 This has barley started, there is nothing much here.
+
+## sus
+### Purpose
+With using i3wm as my ubuntu desktop env, I got tired of having to do systemctl suspend, so I made a command that is to go into where ever you keep
+custom commands like in .local/bin for instance which basically make the computer sleep in x seconds.
+
+### Additonal info
+Usage: sus (time in seconds) or -h or --help to see this message
+
+No time makes the system go into suspend after 5 seconds.
+Any number makes the process wait until that time passed.
+-h or --help displayes the usage above.
+Anything else will tell you to put in a number.
